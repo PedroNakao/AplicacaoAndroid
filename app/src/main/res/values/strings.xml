@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Application5</string>
+    <string name="menu_inicial">Tela inicial</string>
+    <string name="sala">Sala</string>
+    <string name="reserva">Reserva</string>
+    <string name="usuario">Usuário</string>
+    <string name="recurso">Recurso</string>
+    <string name="id">ID</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="tipo_usuario">Tipo de usuário</string>
+    <string name="listar">Listar</string>
+    <string name="capacidade">Capacidade</string>
+    <string name="descrição">Descrição</string>
+    <string name="emManutencao">Em Manutenção</string>
+    <string name="horas">Horas Permitidas</string>
+    <string name="buscar">Buscar</string>
+    <string name="data">Data</string>
+    <string name="horaInicial">Horário Inicial</string>
+    <string name="horaFinal">Horário Final</string>
+
+
+    <string name="mostrarUsuario">Mostrar Usuários</string>
+    <string name="criarUsuario">Criar Usuário</string>
+    <string name="atualizarUsuario">Atualizar Usuário</string>
+    <string name="removerUsuario">Remover Usuário</string>
+
+    <string name="mostrarSala">Mostrar Salas</string>
+    <string name="criarSala">Criar Sala</string>
+    <string name="atualizarSala">Atualizar Sala</string>
+    <string name="removerSala">Remover Sala</string>
+
+    <string name="mostrarRecurso">Mostrar Recursos</string>
+    <string name="criarRecurso">Criar Recurso</string>
+    <string name="atualizarRecurso">Atualizar Recurso</string>
+    <string name="removerRecurso">Remover Recurso</string>
+
+    <string name="mostrarTipoUsuario">Mostrar Tipos de Usuários</string>
+    <string name="criarTipoUsuario">Criar Tipo de Usuário</string>
+    <string name="atualizarTipoUsuario">Atualizar Tipo de Usuário</string>
+    <string name="removerTipoUsuario">Remover Tipo de Usuário</string>
+
+    <string name="agendarReserva">Agendar Reserva</string>
+    <string name="consultarReserva">Consultar Reserva</string>
+    <string name="atualizarReserva">Atualizar Reserva</string>
+    <string name="removerReserva">Remover Reserva</string>
+
+</resources>

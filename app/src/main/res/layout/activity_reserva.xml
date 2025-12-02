@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservaActivity">
+
+    <TextView
+        android:id="@+id/tvReserva"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/reserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etIDReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReserva" />
+
+    <Button
+        android:id="@+id/btnBuscarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buscar"
+        app:layout_constraintStart_toEndOf="@+id/etIDReserva"
+        app:layout_constraintTop_toBottomOf="@+id/tvReserva" />
+
+    <EditText
+        android:id="@+id/etDataReserva"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/data"
+        android:inputType="date"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIDReserva" />
+
+    <EditText
+        android:id="@+id/etHoraInicialReserva"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/horaInicial"
+        android:inputType="time"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIDReserva" />
+
+    <EditText
+        android:id="@+id/etHorarioFimReserva"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/horaFinal"
+        android:inputType="time"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHoraInicialReserva" />
+
+    <Spinner
+        android:id="@+id/spUsuarioReserva"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHorarioFimReserva" />
+
+    <Spinner
+        android:id="@+id/spSalaReserva"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spUsuarioReserva" />
+
+    <Spinner
+        android:id="@+id/spRecursoReserva"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSalaReserva" />
+
+    <TextView
+        android:id="@+id/tvListaReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemoverReserva" />
+
+    <Button
+        android:id="@+id/btnAgendarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/agendarReserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spRecursoReserva" />
+
+    <Button
+        android:id="@+id/btnConsultarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/consultarReserva"
+        app:layout_constraintStart_toEndOf="@+id/btnAgendarReserva"
+        app:layout_constraintTop_toBottomOf="@+id/spRecursoReserva" />
+
+    <Button
+        android:id="@+id/btnRemoverReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/removerReserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgendarReserva" />
+
+    <Button
+        android:id="@+id/btnAtualizarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/atualizarReserva"
+        app:layout_constraintStart_toEndOf="@+id/btnRemoverReserva"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultarReserva" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_inicial"
+        android:title="@string/menu_inicial" />
+    <item
+        android:id="@+id/menu_sala"
+        android:title="@string/sala" />
+    <item
+        android:id="@+id/menu_reserva"
+        android:title="@string/reserva" />
+    <item
+        android:id="@+id/menu_recurso"
+        android:title="@string/recurso" />
+    <item
+        android:id="@+id/menu_usuario"
+        android:title="@string/usuario" />
+    <item
+        android:id="@+id/menu_tipo_usuario"
+        android:title="@string/tipo_usuario" />
+</menu>
