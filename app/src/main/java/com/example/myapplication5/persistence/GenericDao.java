@@ -19,6 +19,14 @@ public class GenericDao extends SQLiteOpenHelper {
                     "email VARCHAR(100) NOT NULL,"+
                     "id_tipo_usuario INT NOT NULL, "+
                     "FOREIGN KEY (id_tipo_usuario) REFERENCES tipo_usuario(id))";
+    private static final String CREATE_TABLE_RECURSO =
+            "CREATE TABLE recurso( " +
+                    "idRecurso INT NOT NULL, " +
+                    "nome VARCHAR(40) NOT NULL," +
+                    "descricao VARCHAR(255) NOT NULL," +
+                    "manutencao BIT NOT NULL," +
+                    "PRIMARY KEY (idRecurso)" +
+                    ")";
     public GenericDao(Context context) {
         super(context, DATABASE, null, DATABASE_VER);
     }
@@ -27,6 +35,7 @@ public class GenericDao extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(CREATE_TABLE_TIPOUSER);
         sqLiteDatabase.execSQL(CREATE_TABLE_USER);
+        sqLiteDatabase.execSQL(CREATE_TABLE_RECURSO);
     }
 
     @Override
@@ -34,6 +43,7 @@ public class GenericDao extends SQLiteOpenHelper {
         if (novaVersao > antigaVersao) {
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS tipo_usuario");
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS usuario");
+            sqLiteDatabase.execSQL("DROP TABLE IF EXISTS Recurso");
             onCreate(sqLiteDatabase);
         }
     }
